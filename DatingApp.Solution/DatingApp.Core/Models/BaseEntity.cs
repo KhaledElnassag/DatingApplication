@@ -11,17 +11,18 @@ namespace DatingApp.Core.Models
 	{
 		public int Id { get; set; }
 		public bool IsActive { get; set; } = true;
+
 		[ForeignKey("InsertedBy")]
 		public string? InsertedById { get; set; }
 		public ApplicationUser? InsertedBy { get; set; }
 		public DateTime InsertedIn { get; set; } = DateTime.Now;
-		[ForeignKey("ModifiedBy")]
 
+		[ForeignKey("ModifiedBy")]
 		public string? ModifiedById { get; set; }
 		public ApplicationUser? ModifiedBy { get; set; }
 		public DateTime? ModifiedIn { get; set; }
-		[ForeignKey("DeletedBy")]
 
+		[ForeignKey("DeletedBy")]
 		public string? DeletedById { get; set; }
 		public ApplicationUser? DeletedBy { get; set; }
 		public DateTime? DeletedIn { get; set; }
