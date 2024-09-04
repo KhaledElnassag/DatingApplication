@@ -4738,11 +4738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ASP.NET\\SelfProjects\\DatingApp.Solution\\DatingApp\\DatingApp.csproj",
+      "projectUniqueName": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\DatingApp.csproj",
       "projectName": "DatingApp",
-      "projectPath": "F:\\ASP.NET\\SelfProjects\\DatingApp.Solution\\DatingApp\\DatingApp.csproj",
+      "projectPath": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\DatingApp.csproj",
       "packagesPath": "C:\\Users\\Candle-Home\\.nuget\\packages\\",
-      "outputPath": "F:\\ASP.NET\\SelfProjects\\DatingApp.Solution\\DatingApp\\obj\\",
+      "outputPath": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4764,8 +4764,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\ASP.NET\\SelfProjects\\DatingApp.Solution\\DatingApp.Repository\\DatingApp.Repository.csproj": {
-              "projectPath": "F:\\ASP.NET\\SelfProjects\\DatingApp.Solution\\DatingApp.Repository\\DatingApp.Repository.csproj"
+            "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Repository\\DatingApp.Repository.csproj": {
+              "projectPath": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Repository\\DatingApp.Repository.csproj"
             }
           }
         }

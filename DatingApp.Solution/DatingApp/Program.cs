@@ -1,7 +1,10 @@
 
+using DatingApp.Core.Dtos;
 using DatingApp.Core.Models;
+using DatingApp.MiddleWares;
 using DatingApp.Repository.DataBase;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp
@@ -18,6 +21,14 @@ namespace DatingApp
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
+			builder.Services.Configure<ApiBehaviorOptions>(options =>
+			{
+				options.InvalidModelStateResponseFactory = action =>
+				{
+					var Errors=action.ModelState.SelectMany(M => M.Value.Errors).Select(E => E.ErrorMessage).ToList();
+					return new BadRequestObjectResult(new ValidationErrorDto(400,Errors));
+				};
+			});
 
 			builder.Services.AddDbContext<ApplicationContext>(opt =>
 			{
@@ -53,6 +64,7 @@ namespace DatingApp
 			#endregion
 
 			// Configure the HTTP request pipeline.
+			app.UseMiddleware<ExceptionMiddleWare>();
 			if (app.Environment.IsDevelopment())
 			{
 				app.UseSwagger();
@@ -60,7 +72,9 @@ namespace DatingApp
 			}
 
 			app.UseHttpsRedirection();
+			app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
+			app.UseAuthentication();
 			app.UseAuthorization();
 
 

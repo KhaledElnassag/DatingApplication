@@ -9,3 +9,15 @@ F:\ASP.NET\SelfProjects\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\Da
 F:\ASP.NET\SelfProjects\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\refint\DatingApp.Service.dll
 F:\ASP.NET\SelfProjects\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.pdb
 F:\ASP.NET\SelfProjects\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\ref\DatingApp.Service.dll
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\bin\Debug\net8.0\DatingApp.Service.deps.json
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\bin\Debug\net8.0\DatingApp.Service.dll
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\bin\Debug\net8.0\DatingApp.Service.pdb
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.AssemblyInfoInputs.cache
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.AssemblyInfo.cs
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.sourcelink.json
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.dll
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\refint\DatingApp.Service.dll
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\DatingApp.Service.pdb
+F:\ASP.NET\Repo\Dating\DatingApplication\DatingApp.Solution\DatingApp.Service\obj\Debug\net8.0\ref\DatingApp.Service.dll
