@@ -66,6 +66,10 @@ namespace DatingApp.Repository.Repositories
 		{
 			return await ApplySpecification.Apply(_Context.Set<T>(), spec).FirstOrDefaultAsync();
 		}
+		public TOut? SelectWithSpec<TOut>(ISpecification<T> spec, Func<T, TOut> selectCrietria) where TOut:class
+		{
+			return  ApplySpecification.Apply(_Context.Set<T>(), spec).Select(selectCrietria).FirstOrDefault();
+		}
 
 		public async Task<int> CountWithSpecAsync(ISpecification<T> spec)
 		{
@@ -81,7 +85,10 @@ namespace DatingApp.Repository.Repositories
 		{
 			return await ApplySpecification.Apply(_Context.Set<T>(), spec).ToListAsync();
 		}
-
+		public IEnumerable<TOut> SelectAllWithSpec<TOut>(ISpecification<T> spec, Func<T, TOut> selectCrietria) where TOut : class
+		{
+			return  ApplySpecification.Apply(_Context.Set<T>(), spec).Select(selectCrietria).ToList();
+		}
 		#endregion
 		#region Specification With Strategy
 		public async Task<TOut?> GetWithSpecAsync<TOut>(ISpecification<T> Specs, Func<IQueryable<T>, IQueryable<TOut>> BuildQuery) where TOut : class
@@ -110,6 +117,8 @@ namespace DatingApp.Repository.Repositories
 
 			return await BuildQuery(SpecQuery).AnyAsync();
 		}
+
+		
 		#endregion
 
 

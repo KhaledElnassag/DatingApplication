@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\DatingApp.Service.csproj",
+      "projectUniqueName": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\DatingApp.Service.csproj",
       "projectName": "DatingApp.Service",
-      "projectPath": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\DatingApp.Service.csproj",
+      "projectPath": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\DatingApp.Service.csproj",
       "packagesPath": "C:\\Users\\Candle-Home\\.nuget\\packages\\",
-      "outputPath": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\obj\\",
+      "outputPath": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

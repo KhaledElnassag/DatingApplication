@@ -6,7 +6,7 @@ namespace DatingApp.Controllers
 	[ApiExplorerSettings(IgnoreApi = true)]
 	[ApiController]
 	[Route("Error/{code}")]
-	public class ErrorController : Controller
+	public class ErrorController : ControllerBase
 	{
 		public ActionResult<ErrorDto> Error(int code)
 		{

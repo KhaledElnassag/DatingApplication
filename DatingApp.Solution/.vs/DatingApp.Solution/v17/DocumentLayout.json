@@ -1,30 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\",
+  "WorkspaceRootPath": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|f:\\asp.net\\repo\\dating\\datingapplication\\datingapp.solution\\datingapp.core\\dtos\\servererrordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|solutionrelative:datingapp.core\\dtos\\servererrordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\dating\\datingapplication\\datingapp.solution\\datingapp\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp.core\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|solutionrelative:datingapp.core\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\dating\\datingapplication\\datingapp.solution\\datingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6676E12C-67D1-42C8-B2D2-367811AFD04B}|DatingApp.Repository\\DatingApp.Repository.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp.repository\\database\\seedingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6676E12C-67D1-42C8-B2D2-367811AFD04B}|DatingApp.Repository\\DatingApp.Repository.csproj|solutionrelative:datingapp.repository\\database\\seedingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\dating\\datingapplication\\datingapp.solution\\datingapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\dating\\datingapplication\\datingapp.solution\\datingapp\\datingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\datingapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\dating\\datingapplication\\datingapp.solution\\datingapp\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ServerErrorDto.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Dtos\\ServerErrorDto.cs",
-              "RelativeDocumentMoniker": "DatingApp.Core\\Dtos\\ServerErrorDto.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Dtos\\ServerErrorDto.cs",
-              "RelativeToolTip": "DatingApp.Core\\Dtos\\ServerErrorDto.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAABAPQoAAAAsAAAA",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Controllers\\UsersController.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "DatingApp\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAA4AAAAgmZmZmZktwBYAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T18:57:59.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExceptionMiddleWare.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\MiddleWares\\ExceptionMiddleWare.cs",
-              "RelativeDocumentMoniker": "DatingApp\\MiddleWares\\ExceptionMiddleWare.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\MiddleWares\\ExceptionMiddleWare.cs",
-              "RelativeToolTip": "DatingApp\\MiddleWares\\ExceptionMiddleWare.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T18:41:46.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DatingApp",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\DatingApp.csproj",
-              "RelativeDocumentMoniker": "DatingApp\\DatingApp.csproj",
-              "ToolTip": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\DatingApp.csproj",
-              "RelativeToolTip": "DatingApp\\DatingApp.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-04T18:40:50.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "DatingApp\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "DatingApp\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAwAAACgZmZmZmYswBkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T18:30:50.726Z",
+              "WhenOpened": "2024-09-09T14:51:20.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
-              "RelativeDocumentMoniker": "DatingApp\\Program.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
-              "RelativeToolTip": "DatingApp\\Program.cs",
-              "ViewState": "AQIAADQAAACAamZmZmYOwEIAAAAUAAAA",
+              "Title": "SeedingData.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Repository\\DataBase\\SeedingData.cs",
+              "RelativeDocumentMoniker": "DatingApp.Repository\\DataBase\\SeedingData.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Repository\\DataBase\\SeedingData.cs",
+              "RelativeToolTip": "DatingApp.Repository\\DataBase\\SeedingData.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:15:24.484Z",
+              "WhenOpened": "2024-09-09T14:31:17.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ErrorController.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\ErrorController.cs",
-              "RelativeDocumentMoniker": "DatingApp\\Controllers\\ErrorController.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\Dating\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\ErrorController.cs",
-              "RelativeToolTip": "DatingApp\\Controllers\\ErrorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "DocumentIndex": 1,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "DatingApp.Core\\Models\\ApplicationUser.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "DatingApp.Core\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T17:10:42.848Z",
+              "WhenOpened": "2024-09-09T14:28:42.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Program.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
+              "RelativeToolTip": "DatingApp\\Program.cs",
+              "ViewState": "AQIAAAMAAABAZmZmZmYkwA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T13:03:48.09Z",
               "EditorCaption": ""
             }
           ]

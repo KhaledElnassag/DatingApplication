@@ -23,12 +23,14 @@ namespace DatingApp.Core.Interfaces
 		#endregion
 		#region Specification
 		public Task<T?> GetWithSpecAsync(ISpecification<T> spec);
+		public TOut? SelectWithSpec<TOut>(ISpecification<T> spec,Func<T,TOut>selectCrietria)where TOut:class;
 
 		public Task<int> CountWithSpecAsync(ISpecification<T> spec);
 
 		public Task<bool> IsExistWithSpecAsync(ISpecification<T> spec);
 
 		public Task<IEnumerable<T>> GetAllWithSpecAsync(ISpecification<T> spec); 
+		public IEnumerable<TOut> SelectAllWithSpec<TOut>(ISpecification<T> spec, Func<T, TOut> selectCrietria) where TOut : class; 
 		#endregion
 		#region Strategy & Specification
 
