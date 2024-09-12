@@ -1,11 +1,17 @@
 
 using DatingApp.Core.Dtos;
+using DatingApp.Core.Interfaces;
 using DatingApp.Core.Models;
+using DatingApp.Helper.Mapper;
 using DatingApp.MiddleWares;
 using DatingApp.Repository.DataBase;
+using DatingApp.Service;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace DatingApp
 {
@@ -21,6 +27,7 @@ namespace DatingApp
 			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
+			builder.Services.AddScoped<ITokenService, TokenService>();
 			builder.Services.Configure<ApiBehaviorOptions>(options =>
 			{
 				options.InvalidModelStateResponseFactory = action =>
@@ -42,7 +49,34 @@ namespace DatingApp
 				op.Password.RequireNonAlphanumeric = true;
 			})
 				.AddEntityFrameworkStores<ApplicationContext>();
-			builder.Services.AddAuthorization();
+			builder.Services.AddAuthentication(op =>
+			{
+				op.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+				op.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+			})
+			.AddJwtBearer(op =>
+			{
+				op.TokenValidationParameters = new TokenValidationParameters()
+				{
+					ValidateIssuer = true,
+					ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+					ValidateAudience = true,
+					ValidAudience = builder.Configuration["JWT:ValidAudience"],
+					ValidateLifetime = true,
+					IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
+				};
+			});
+			builder.Services.AddCors(op =>
+			{
+				op.AddPolicy("MyPolicy", option =>
+				{
+					
+						string FrontUrl = builder.Configuration["FronBaseUrl"];
+						option.AllowAnyHeader().AllowAnyMethod().WithOrigins(FrontUrl);
+					
+				});
+			});
+			builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 			var app = builder.Build();
 
 			#region Update Database
@@ -73,7 +107,8 @@ namespace DatingApp
 
 			app.UseHttpsRedirection();
 			app.UseStatusCodePagesWithReExecute("/Error/{0}");
-
+			app.UseStaticFiles();
+			app.UseCors("MyPolicy");
 			app.UseAuthentication();
 			app.UseAuthorization();
 

@@ -441,3 +441,9 @@ F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\obj\Debug\net8.0\
 F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\obj\Debug\net8.0\DatingApp.pdb
 F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\obj\Debug\net8.0\DatingApp.genruntimeconfig.cache
 F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\obj\Debug\net8.0\ref\DatingApp.dll
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\DatingApp.Service.dll
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\DatingApp.Service.pdb
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\DatingApp.staticwebassets.runtime.json
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\AutoMapper.dll
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

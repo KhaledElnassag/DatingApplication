@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "1JowiRPwUnPlBtUkY1OnoJ7qV5sukysPfYfhsM8vzcU=",
+  "Hash": "CVCBx1gPl01Q7R/j5DNvQxDYtR/DK7ffnkTYl+yYhQ0=",
   "Source": "DatingApp",
   "BasePath": "_content/DatingApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DatingApp\\wwwroot",
+      "Source": "DatingApp",
+      "ContentRoot": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\",
+      "BasePath": "_content/DatingApp",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

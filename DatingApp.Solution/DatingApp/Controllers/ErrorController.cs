@@ -10,7 +10,7 @@ namespace DatingApp.Controllers
 	{
 		public ActionResult<ErrorDto> Error(int code)
 		{
-			return Ok(new ErrorDto(code));
+			return BadRequest(new ErrorDto(code));
 		}
 	}
 }
