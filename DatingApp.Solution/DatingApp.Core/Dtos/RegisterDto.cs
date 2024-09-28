@@ -11,6 +11,11 @@ namespace DatingApp.Core.Dtos
 	{
         [Required(ErrorMessage = "User Name Is Required!")]
         public string UserName { get; set; }
+		public DateTime DateOfBirth { get; set; }
+		public string? KnownAs { get; set; }
+		public string? Gender { get; set; }
+		public string? City { get; set; }
+		public string? Country { get; set; }
 		[Required(ErrorMessage = "Password Is Required!")]
 		[DataType(DataType.Password)]
         public string Password { get; set; }

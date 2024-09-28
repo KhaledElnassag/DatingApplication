@@ -203,6 +203,79 @@ namespace DatingApp.Repository.DataBase.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("DatingApp.Core.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DateRead")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("DeletedIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InsertedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("InsertedIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("ModifiedIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool?>("ReciverDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ReciverId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ReciverName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool?>("SenderDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("SenderName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeletedById");
+
+                    b.HasIndex("InsertedById");
+
+                    b.HasIndex("ModifiedById");
+
+                    b.HasIndex("ReciverId");
+
+                    b.HasIndex("SenderId");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("DatingApp.Core.Models.Photo", b =>
                 {
                     b.Property<int>("Id")
@@ -230,6 +303,59 @@ namespace DatingApp.Repository.DataBase.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Photos");
+                });
+
+            modelBuilder.Entity("DatingApp.Core.Models.UserLike", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DeletedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("DeletedIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InsertedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("InsertedIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LikeById")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ModifiedById")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("ModifiedIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("YourLikeId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DeletedById");
+
+                    b.HasIndex("InsertedById");
+
+                    b.HasIndex("ModifiedById");
+
+                    b.HasIndex("YourLikeId");
+
+                    b.HasIndex("LikeById", "YourLikeId")
+                        .IsUnique();
+
+                    b.ToTable("UserLikes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -380,6 +506,43 @@ namespace DatingApp.Repository.DataBase.Migrations
                     b.Navigation("ModifiedBy");
                 });
 
+            modelBuilder.Entity("DatingApp.Core.Models.Message", b =>
+                {
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "DeletedBy")
+                        .WithMany()
+                        .HasForeignKey("DeletedById");
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "InsertedBy")
+                        .WithMany()
+                        .HasForeignKey("InsertedById");
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "ModifiedBy")
+                        .WithMany()
+                        .HasForeignKey("ModifiedById");
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "Reciver")
+                        .WithMany("Recive")
+                        .HasForeignKey("ReciverId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "Sender")
+                        .WithMany("Send")
+                        .HasForeignKey("SenderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DeletedBy");
+
+                    b.Navigation("InsertedBy");
+
+                    b.Navigation("ModifiedBy");
+
+                    b.Navigation("Reciver");
+
+                    b.Navigation("Sender");
+                });
+
             modelBuilder.Entity("DatingApp.Core.Models.Photo", b =>
                 {
                     b.HasOne("DatingApp.Core.Models.ApplicationUser", "User")
@@ -389,6 +552,43 @@ namespace DatingApp.Repository.DataBase.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("DatingApp.Core.Models.UserLike", b =>
+                {
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "DeletedBy")
+                        .WithMany()
+                        .HasForeignKey("DeletedById");
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "InsertedBy")
+                        .WithMany()
+                        .HasForeignKey("InsertedById");
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "LikeBy")
+                        .WithMany("LikedBy")
+                        .HasForeignKey("LikeById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "ModifiedBy")
+                        .WithMany()
+                        .HasForeignKey("ModifiedById");
+
+                    b.HasOne("DatingApp.Core.Models.ApplicationUser", "YourLike")
+                        .WithMany("YourLikes")
+                        .HasForeignKey("YourLikeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DeletedBy");
+
+                    b.Navigation("InsertedBy");
+
+                    b.Navigation("LikeBy");
+
+                    b.Navigation("ModifiedBy");
+
+                    b.Navigation("YourLike");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -444,7 +644,15 @@ namespace DatingApp.Repository.DataBase.Migrations
 
             modelBuilder.Entity("DatingApp.Core.Models.ApplicationUser", b =>
                 {
+                    b.Navigation("LikedBy");
+
                     b.Navigation("Photos");
+
+                    b.Navigation("Recive");
+
+                    b.Navigation("Send");
+
+                    b.Navigation("YourLikes");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,5 @@
-﻿using DatingApp.Core.Dtos;
+﻿using AutoMapper;
+using DatingApp.Core.Dtos;
 using DatingApp.Core.Interfaces;
 using DatingApp.Core.Models;
 using Microsoft.AspNetCore.Http;
@@ -14,13 +15,15 @@ namespace DatingApp.Controllers
 		private readonly ITokenService _TokenService;
 		private readonly SignInManager<ApplicationUser> _SignInManager;
 		private readonly UserManager<ApplicationUser> _UserManager;
+		private readonly IMapper _Mapper;
 
 		public AccountController(ITokenService tokenService,SignInManager<ApplicationUser> signInManager
-			, UserManager<ApplicationUser> userManager)
+			, UserManager<ApplicationUser> userManager,IMapper mapper)
 		{
 			_TokenService = tokenService;
 			_SignInManager = signInManager;
 			_UserManager = userManager;
+			_Mapper = mapper;
 		}
 		[HttpPost("register")]
 		public async Task<ActionResult> register(RegisterDto dto)
@@ -28,17 +31,16 @@ namespace DatingApp.Controllers
 			var IsExist =  _UserManager.Users.Any(U=>U.UserName==dto.UserName.ToLower());
 			if (!IsExist)
 			{
-				var User = new ApplicationUser
-				{
-					UserName=dto.UserName
-				};
+				var User = _Mapper.Map<ApplicationUser>(dto);
 				var IsSuccess = await _UserManager.CreateAsync(User, dto.Password);
 				if (IsSuccess.Succeeded)
 				{
 					return Ok(new UserDto
 					{
 						UserName = User.UserName,
-						Token = await _TokenService.GenerateTokenAsync(User)
+						Token = await _TokenService.GenerateTokenAsync(User),
+						PhotoUrl=User.Photos.FirstOrDefault
+						(P=>P.IsMain)?.Url
 					});
 				}
 				return BadRequest(new ErrorDto(400,"User Name Or Password InValid!"));
@@ -48,7 +50,7 @@ namespace DatingApp.Controllers
 		[HttpPost("login")]
 		public async Task<ActionResult> Login(LoginDto dto)
 		{
-			var User = await _UserManager.FindByNameAsync(dto.UserName.ToLower());
+			var User = await _UserManager.Users.Include(U=>U.Photos).FirstOrDefaultAsync(U=>U.UserName.ToLower()== dto.UserName.ToLower());
 			if (User is not null)
 			{
 				var IsValid=await _SignInManager.CheckPasswordSignInAsync(User, dto.Password,false);
@@ -56,11 +58,13 @@ namespace DatingApp.Controllers
 				{
 					var UserToken= await _TokenService.GenerateTokenAsync(User);
 					if (UserToken is not null) {
-						return Ok(new UserDto
+						var res = new UserDto
 						{
 							UserName = User.UserName,
-							Token = UserToken
-						}); 
+							Token = UserToken,
+							PhotoUrl = User.Photos.FirstOrDefault(P => P.IsMain)?.Url
+						};
+						return Ok(res); 
 					}
 				}
 			}

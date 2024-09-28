@@ -447,3 +447,5 @@ F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\
 F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\DatingApp.staticwebassets.runtime.json
 F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\AutoMapper.dll
 F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\CloudinaryDotNet.dll
+F:\ASP.NET\Repo\DatingApplication\DatingApp.Solution\DatingApp\bin\Debug\net8.0\Newtonsoft.Json.dll

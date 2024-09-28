@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CVCBx1gPl01Q7R/j5DNvQxDYtR/DK7ffnkTYl+yYhQ0=",
+  "Hash": "Tqg3mWhqHKoiUqe0Z97US0KktHD3J3eqX9rBOL+7TTk=",
   "Source": "DatingApp",
   "BasePath": "_content/DatingApp",
   "Mode": "Default",
@@ -15,5 +15,44 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\Images\\khaled1.jpg",
+      "SourceId": "DatingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\",
+      "BasePath": "_content/DatingApp",
+      "RelativePath": "Images/khaled1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\khaled1.jpg"
+    },
+    {
+      "Identity": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\Images\\khaled2.jpeg",
+      "SourceId": "DatingApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\",
+      "BasePath": "_content/DatingApp",
+      "RelativePath": "Images/khaled2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\khaled2.jpeg"
+    }
+  ]
 }

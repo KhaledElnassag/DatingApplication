@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\Images\\khaled1.jpg",
+      "PackagePath": "staticwebassets\\Images\\khaled1.jpg"
+    },
+    {
+      "Id": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\wwwroot\\Images\\khaled2.jpeg",
+      "PackagePath": "staticwebassets\\Images\\khaled2.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DatingApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DatingApp.props",
+      "PackagePath": "build\\DatingApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DatingApp.props",
+      "PackagePath": "buildMultiTargeting\\DatingApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DatingApp.props",
+      "PackagePath": "buildTransitive\\DatingApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

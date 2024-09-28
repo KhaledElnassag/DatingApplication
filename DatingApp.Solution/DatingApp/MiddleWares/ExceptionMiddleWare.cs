@@ -1,5 +1,8 @@
 ﻿using DatingApp.Core.Dtos;
+using DatingApp.Core.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Text.Json;
 
 namespace DatingApp.MiddleWares
@@ -21,6 +24,14 @@ namespace DatingApp.MiddleWares
 			try
 			{
 				await _Next.Invoke(action);
+				if (action.User.Identity.IsAuthenticated)
+				{
+					var userManager = action.RequestServices.GetRequiredService<UserManager<ApplicationUser>>();
+					var name = action.User.FindFirstValue(ClaimTypes.Name);
+					var user=await userManager.FindByNameAsync(name);
+					user.LastActive=DateTime.Now;
+					await userManager.UpdateAsync(user);
+				}
 			}
 			catch (Exception e)
 			{

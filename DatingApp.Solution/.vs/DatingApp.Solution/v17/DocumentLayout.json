@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D7E21725-8490-415B-AAC5-1C7A7FCB8455}|DatingApp.Service\\DatingApp.Service.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp.service\\presenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7E21725-8490-415B-AAC5-1C7A7FCB8455}|DatingApp.Service\\DatingApp.Service.csproj|solutionrelative:datingapp.service\\presenceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\helper\\mapper\\profiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\helper\\mapper\\profiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp.core\\dtos\\photodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|solutionrelative:datingapp.core\\dtos\\photodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6676E12C-67D1-42C8-B2D2-367811AFD04B}|DatingApp.Repository\\DatingApp.Repository.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp.repository\\database\\seedingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6676E12C-67D1-42C8-B2D2-367811AFD04B}|DatingApp.Repository\\DatingApp.Repository.csproj|solutionrelative:datingapp.repository\\database\\seedingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp.core\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{268BCF95-21BD-4658-812F-E025D2B3D811}|DatingApp.Core\\DatingApp.Core.csproj|solutionrelative:datingapp.core\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\signalr\\presencehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\signalr\\presencehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|f:\\asp.net\\repo\\datingapplication\\datingapp.solution\\datingapp\\helper\\mapper\\profiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35D18EA2-6E48-4011-A19C-34B40C39606E}|DatingApp\\DatingApp.csproj|solutionrelative:datingapp\\helper\\mapper\\profiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,81 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SeedingData.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Repository\\DataBase\\SeedingData.cs",
-              "RelativeDocumentMoniker": "DatingApp.Repository\\DataBase\\SeedingData.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Repository\\DataBase\\SeedingData.cs",
-              "RelativeToolTip": "DatingApp.Repository\\DataBase\\SeedingData.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAABoPRAAAAAEAAAA",
+              "DocumentIndex": 0,
+              "Title": "PresenceService.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\PresenceService.cs",
+              "RelativeDocumentMoniker": "DatingApp.Service\\PresenceService.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Service\\PresenceService.cs",
+              "RelativeToolTip": "DatingApp.Service\\PresenceService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T21:50:19.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "DatingApp.Core\\Models\\ApplicationUser.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "DatingApp.Core\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAA8AAACAzMzMzMwUwBMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T21:38:01.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Profiler.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Helper\\Mapper\\Profiler.cs",
-              "RelativeDocumentMoniker": "DatingApp\\Helper\\Mapper\\Profiler.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Helper\\Mapper\\Profiler.cs",
-              "RelativeToolTip": "DatingApp\\Helper\\Mapper\\Profiler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T17:16:13.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
-              "RelativeDocumentMoniker": "DatingApp\\Program.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
-              "RelativeToolTip": "DatingApp\\Program.cs",
-              "ViewState": "AQIAAD8AAACAZmZmZmYkwE4AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T17:15:06.952Z",
+              "WhenOpened": "2024-09-27T22:41:32.107Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PhotoDto.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Dtos\\PhotoDto.cs",
-              "RelativeDocumentMoniker": "DatingApp.Core\\Dtos\\PhotoDto.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp.Core\\Dtos\\PhotoDto.cs",
-              "RelativeToolTip": "DatingApp.Core\\Dtos\\PhotoDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Program.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Program.cs",
+              "RelativeToolTip": "DatingApp\\Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAmwCIAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T16:46:28.311Z",
+              "WhenOpened": "2024-09-27T22:33:41.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "DatingApp\\Controllers\\UsersController.cs",
-              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "DatingApp\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAgAAAAgMzMzMzMLwA8AAAAjAAAA",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Controllers\\AccountController.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "DatingApp\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAC8AAABQZmZmZmYiwDMAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T16:41:02.646Z",
+              "WhenOpened": "2024-09-27T17:20:08.25Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Controllers\\ErrorController.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "DatingApp\\Controllers\\ErrorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:20:08.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessagesController.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\MessagesController.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Controllers\\MessagesController.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Controllers\\MessagesController.cs",
+              "RelativeToolTip": "DatingApp\\Controllers\\MessagesController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAIwDYAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T17:20:09.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PresenceHub.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\SignalR\\PresenceHub.cs",
+              "RelativeDocumentMoniker": "DatingApp\\SignalR\\PresenceHub.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\SignalR\\PresenceHub.cs",
+              "RelativeToolTip": "DatingApp\\SignalR\\PresenceHub.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T15:36:25.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Profiler.cs",
+              "DocumentMoniker": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Helper\\Mapper\\Profiler.cs",
+              "RelativeDocumentMoniker": "DatingApp\\Helper\\Mapper\\Profiler.cs",
+              "ToolTip": "F:\\ASP.NET\\Repo\\DatingApplication\\DatingApp.Solution\\DatingApp\\Helper\\Mapper\\Profiler.cs",
+              "RelativeToolTip": "DatingApp\\Helper\\Mapper\\Profiler.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABMAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T22:21:03.761Z"
             }
           ]
         }

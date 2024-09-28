@@ -1,4 +1,5 @@
 export interface UserLogin {
     userName:string,
-    token:string
+    token:string,
+    photoUrl:string
 }

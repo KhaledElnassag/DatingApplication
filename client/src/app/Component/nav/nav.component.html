@@ -18,9 +18,10 @@
           </li>
         </ul>
         <div *ngIf="(accountService.currentUser$|async)as currentUser"  class="dropdown" dropdown>
+          <img [src]="currentUser?.photoUrl">
           <a  class="dropdown-toggle text-light text-decoration-none" dropdownToggle>Welcome {{currentUser?.userName}}</a>
           <div class="dropdown-menu mt-3" *dropdownMenu>
-              <a class="dropdown-item">Edit profile</a>
+              <a class="dropdown-item" routerLink="/member/edit">Edit profile</a>
               <a class="dropdown-item" (click)="logout()">Logout</a>
           </div>
       </div>

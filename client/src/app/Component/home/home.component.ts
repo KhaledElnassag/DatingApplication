@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Toast, ToastrService } from 'ngx-toastr';
 import { AccountService } from 'src/app/Services/account.service';
 import { MembersService } from 'src/app/Services/members.service';
@@ -8,14 +8,12 @@ import { MembersService } from 'src/app/Services/members.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent  {
   registerMode = false;
-constructor(public accountService:AccountService,memberService:MembersService,toast:ToastrService) {
-  memberService.getAllMembers().subscribe({
-    next:(data)=>console.log(data),
-    error:err=>toast.error(err.error.message)
-  })
+constructor(public accountService:AccountService,private memberService:MembersService,private toast:ToastrService) {
+ 
 }
+ 
 registerToggle() {
   this.registerMode = !this.registerMode
 }

@@ -1,11 +1,14 @@
 
 using DatingApp.Core.Dtos;
+using DatingApp.Core.Helper;
 using DatingApp.Core.Interfaces;
 using DatingApp.Core.Models;
 using DatingApp.Helper.Mapper;
 using DatingApp.MiddleWares;
 using DatingApp.Repository.DataBase;
+using DatingApp.Repository.Repositories;
 using DatingApp.Service;
+using DatingApp.SignalR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +31,9 @@ namespace DatingApp
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
 			builder.Services.AddScoped<ITokenService, TokenService>();
+			builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+			builder.Services.AddScoped<IPhotoService, PhotoService>();
+			builder.Services.AddSingleton<IPresenceService, PresenceService>();
 			builder.Services.Configure<ApiBehaviorOptions>(options =>
 			{
 				options.InvalidModelStateResponseFactory = action =>
@@ -36,6 +42,7 @@ namespace DatingApp
 					return new BadRequestObjectResult(new ValidationErrorDto(400,Errors));
 				};
 			});
+			builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 			builder.Services.AddDbContext<ApplicationContext>(opt =>
 			{
@@ -65,6 +72,19 @@ namespace DatingApp
 					ValidateLifetime = true,
 					IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
 				};
+				op.Events = new JwtBearerEvents
+				{
+					OnMessageReceived = context =>
+					{
+						var accessToken = context.Request.Query["access_token"];
+						var path = context.HttpContext.Request.Path;
+						if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hubs"))
+						{
+							context.Token = accessToken;
+						}
+						return Task.CompletedTask;
+					}
+				};
 			});
 			builder.Services.AddCors(op =>
 			{
@@ -72,11 +92,13 @@ namespace DatingApp
 				{
 					
 						string FrontUrl = builder.Configuration["FronBaseUrl"];
-						option.AllowAnyHeader().AllowAnyMethod().WithOrigins(FrontUrl);
+						option.AllowAnyHeader().AllowAnyMethod()
+					          .AllowCredentials().WithOrigins(FrontUrl);
 					
 				});
 			});
 			builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+			builder.Services.AddSignalR();
 			var app = builder.Build();
 
 			#region Update Database
@@ -112,8 +134,8 @@ namespace DatingApp
 			app.UseAuthentication();
 			app.UseAuthorization();
 
-
 			app.MapControllers();
+			app.MapHub<PresenceHub>("/hubs/presence");
 
 			app.Run();
 		}

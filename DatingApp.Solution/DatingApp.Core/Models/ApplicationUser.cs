@@ -21,6 +21,10 @@ namespace DatingApp.Core.Models
 		public string? City { get; set; }
 		public string? Country { get; set; }
 		public ICollection<Photo> Photos { get; set; } = new HashSet<Photo>();
+		public ICollection<UserLike> YourLikes { get; set; } = new HashSet<UserLike>();
+		public ICollection<UserLike> LikedBy { get; set; } = new HashSet<UserLike>();
+		public ICollection<Message> Send { get; set; } = new HashSet<Message>();
+		public ICollection<Message> Recive { get; set; } = new HashSet<Message>();
 		public bool IsActive { get; set; } = true;
 		[ForeignKey("InsertedBy")]
 		public string? InsertedById { get; set; }
